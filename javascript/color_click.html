@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<style>
+#container {
+	width: 400px;
+	height: 400px;
+	position: relative;
+	background: yellow;
+}
+</style>
+
+<p><button onclick="changeColor()">Change Color</button></p>
+
+<div id = "container"></div>
+
+<script>
+	var i = 0
+	function changeColor(){
+		
+		var color = ['green','blue','orange','yellow'];
+		var elem = document.getElementById('container');
+		elem.style.backgroundColor = color[i];
+		i++;
+	
+		if (i == 4) {
+			i = 0;
+		}
+	}
+
+
+</script>
+</body>
+</html>
+
